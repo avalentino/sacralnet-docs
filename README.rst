@@ -5,13 +5,13 @@ SARCalNet Sphinx Documentation
 
 |GHA Status| |Documentation Status| |Python Versions| |License|
 
-.. |GHA Status| image:: https://github.com/sarcalnet/sarcalnet-docs/actions/workflows/ci.yml/badge.svg
-    :target: https://github.com/sarcalnet/sarcalnet-docs/actions
+.. |GHA Status| image:: https://github.com/sarcalnet/sacralnet-docs/actions/workflows/ci.yml/badge.svg
+    :target: https://github.com/sarcalnet/sacralnet-docs/actions
     :alt: GitHub Actions Status
-.. |Documentation Status| image:: https://readthedocs.org/projects/sarcalnet-docs/badge
-    :target: https://sarcalnet-docs.readthedocs.io
+.. |Documentation Status| image:: https://readthedocs.org/projects/sarcalnet/badge
+    :target: https://sarcalnet.readthedocs.io
     :alt: Documentation Status
-.. |Python Versions| image:: https://img.shields.io/python/required-version-toml
+.. |Python Versions| image:: https://img.shields.io/python/required-version-toml?tomlFilePath=https://raw.githubusercontent.com/sarcalnet/sarcalnet-docs/main/pyproject.toml
     :target: https://github.com/sarcalnet/sarcalnet-docs
     :alt: Python Version
 .. |License| image:: https://img.shields.io/github/license/sarcalnet/sarcalnet-docs
