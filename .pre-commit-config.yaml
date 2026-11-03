@@ -1,0 +1,43 @@
+# See https://pre-commit.com for more information
+# See https://pre-commit.com/hooks.html for more hooks
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v6.0.0
+    hooks:
+    -   id: trailing-whitespace
+    -   id: end-of-file-fixer
+    -   id: check-yaml
+    -   id: check-added-large-files
+    -   id: check-toml
+    -   id: mixed-line-ending
+    -   id: requirements-txt-fixer
+    -   id: check-merge-conflict
+    -   id: detect-private-key
+
+-   repo: https://github.com/codespell-project/codespell
+    rev: v2.4.3
+    hooks:
+    -   id: codespell
+        additional_dependencies: [tomli]
+        exclude: |
+            (?x)^(
+                docs/spelling_wordlist.txt
+            )
+
+-   repo: https://github.com/sphinx-contrib/sphinx-lint
+    rev: v1.0.2
+    hooks:
+      - id: sphinx-lint
+        args: [--max-line-length=80, --enable=all, --ignore=docs/_build]
+
+- repo: https://github.com/rstcheck/rstcheck
+  rev: v6.3.0 # should be replaced with the current verison
+  hooks:
+    - id: rstcheck
+      additional_dependencies: ['rstcheck[sphinx,toml]']
+
+- repo: https://github.com/PyCQA/doc8
+  rev: v2.0.0
+  hooks:
+    - id: doc8
+      args: ['--max-line-length=80']
