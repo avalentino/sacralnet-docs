@@ -18,3 +18,8 @@ dependencies = [
 dev = [
     "sphinx-autobuild>=2024.10",
 ]
+
+[project.urls]
+Documentation = "https://sarcalnet.readthedocs.io"
+Repository = "https://github.com/sarcalnet/sarcalnet-docs"
+Issues = "https://github.com/sarcalnet/sarcalnet-docs/issues"
